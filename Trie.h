@@ -9,6 +9,7 @@ struct WordList{
 
 	WordList(){
 		wordlist = new std::string[5];
+		wordlist[0] = std::string("Совпадений не найдено");
 	}
 	~WordList(){
 		delete[] wordlist;

@@ -47,6 +47,10 @@ int main(){
 			for(int i = 0; i < _list.wordcount; i++){ // вывод найденных совпадений
 				std::cout << _list.getWord(i) << " | ";
 			}
+
+			if(_list.wordcount == 0){
+				std::cout << _list.getWord(0);
+			}
 			
 			std::cout << '\n' << '\n';
 			std::cout << "выберите номер нужного слова; [c]ontinue для продолжения ввода; [q]uit для выхода: ";	
